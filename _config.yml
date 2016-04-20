@@ -1,4 +1,4 @@
-baseurl: /starter
+baseurl: 
 permalink: pretty
 markdown: rdiscount
 prose:
@@ -10,8 +10,12 @@ prose:
     _posts:
       - name: "category"
         field:
-          element: "hidden"
-          value: "blog"
+          element: "multiselect"
+          label: "Add Category"
+          placeholder: "placeholder"
+          options:
+            - name: "cat1"
+              value: "cat1"
       - name: "layout"
         field:
           element: "hidden"
